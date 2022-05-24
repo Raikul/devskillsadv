@@ -117,7 +117,12 @@ const Form = (props) => {
       </div>
       <div>
         <label htmlFor="SSN">SSN</label>
-        <input id="SSN" value={formValue.SSN} onChange={handleChange}></input>
+        <input
+          placeholder="123-45-6789"
+          id="SSN"
+          value={formValue.SSN}
+          onChange={handleChange}
+        ></input>
       </div>
       <div className="button-container">
         <button onClick={resetForm}>Reset</button>

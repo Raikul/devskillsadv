@@ -1,7 +1,23 @@
 * {
-  padding: 5px;
   box-sizing: border-box;
 }
+
+body {
+  height: 100vh;
+}
+
+#root {
+  height: 100%;
+}
+.ui-container * {
+  padding: 5px;
+}
+.ui-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .header,
 .footer {
   font-size: large;
@@ -70,6 +86,9 @@ button:disabled {
   padding: 30px;
   border: black solid 1px;
   background-color: #5cab7d;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 input {
@@ -84,7 +103,11 @@ input {
   background-color: #ffb238;
   width: 100%;
   display: flex;
+  height: 100%;
+  padding: 20px;
   justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
 }
 
 .invisible {
@@ -92,18 +115,19 @@ input {
 }
 
 .form-container {
-  width: auto;
-  height: auto;
   background-color: black;
   color: #ffb238;
   border: black solid 1px;
+  height: min-content;
+  padding: 10px 5px;
 }
 .form-container input {
   border: black solid 1px;
 }
 .list-container {
-  width: auto;
   height: auto;
+  width: auto;
+  align-self: stretch;
   color: #ffb238;
   background-color: rgb(83, 80, 80);
   border: black solid 1px;
@@ -117,7 +141,7 @@ table {
   border: 1px solid black;
   max-height: 50px;
   border-collapse: collapse;
-  width: max-content;
+
   background-color: black;
 }
 
