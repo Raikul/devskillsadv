@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# How to use this App?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Clone it
+Run npm install
+Play!
 
 ## Available Scripts
 
-In the project directory, you can run:
+### `nodemon index.js`
 
-### `npm start`
+Starts the server on port 8081
+
+### `npm start` (on /client)
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+From the Client, you can use the Form to interact with the API endpoints.
 
-### `npm run build`
+Fill in the fields and click "Save".
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The Names and Address have to be at least 2 characters and trimmed.
+The SSN has to be on ###-##-#### format, NO DUPLICATES!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Actually, try to duplicate one, you´ll see a novel error message and a button to make it go away.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The authentication is done automatically with a predefined user and password for your convenience.
 
-### `npm run eject`
+### You can use DEBUG MODE for EXTRA FUN!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*Bored of typing? Just click on the Prefill Button!
+*Your token expired? Click Login!
+*Want to test the automatic table refresh after 2 minutes of inactivity? You´ll see the timer right on the screen! The future is now.
+*Keep an eye out for surprising console logs!
