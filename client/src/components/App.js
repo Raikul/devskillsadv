@@ -42,7 +42,10 @@ const App = () => {
   };
 
   const getToken = async () => {
-    console.log("getting token");
+    if (debugMode) {
+      console.log("Getting Token");
+    }
+
     try {
       const test = await axios.post("http://localhost:8081/auth", {
         username: "sarah",
